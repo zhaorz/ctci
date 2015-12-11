@@ -3,7 +3,7 @@
 # Numbers are randomly generated and passed to a method. Write a program to
 # find and maintain the median value as new values are generated.
 
-from lib.PriorityQueue import PriorityQueue
+from ctci.lib.PriorityQueue import PriorityQueue
 
 class MedianArray(object):
 
@@ -58,6 +58,7 @@ class TestMedianArray(object):
     def __init__(self):
         print('Running MedianArray tests')
         self.testGetMedian()
+        print('Done\n')
 
     def testGetMedian(self):
         M = MedianArray()
