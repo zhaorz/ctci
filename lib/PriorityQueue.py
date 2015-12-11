@@ -1,6 +1,19 @@
 # Priority Queue
 # ~~~~~~~~~~~~~~
+# An heap-based implementation of priority queues. The heap is represented
+# as a dynamically sized array.
 #
+# Usage:
+#   # Creates a min-heap
+#   >>> PQ = PriorityQueue(lambda x, y: True if x < y else False)
+#   >>> PQ.add(42)
+#   >>> PQ.add(17)
+#   >>> PQ.peek()
+#   17
+#   >>> PQ.remove()
+#   17
+#   >>> PQ.peek()
+#   42
 #
 
 class PriorityQueue(object):
@@ -15,14 +28,18 @@ class PriorityQueue(object):
     Interface:
         len()
             Returns the size [int] of the queue
+            O(1)
         add(value)
             value [elem] : elements of the same type that higherPriority
                            acts on.
+            O(log n)
         remove()
             Requires: non-empty queue
             Returns [elem] : the element removed from the queue.
+            O(log n)
         peek()
             Returns [elem] : the highest priority element in the queue.
+            O(1)
     '''
 
     def __init__(self, higherPriority):
