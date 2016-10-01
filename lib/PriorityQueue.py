@@ -356,7 +356,3 @@ class TestPriorityQueue(object):
         assert(len(PQ) == 6)
         print('len passed')
 
-
-if (__name__ == '__main__'):
-    TestPriorityQueue()
-

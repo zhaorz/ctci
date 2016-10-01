@@ -74,8 +74,3 @@ class TestMedianArray(object):
         assert(M.getMedian() == 6)
         print('getMedian passed')
 
-
-if __name__ == '__main__':
-    TestMedianArray()
-
-
